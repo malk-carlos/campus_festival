@@ -7,6 +7,7 @@ import Program from './components/Program';
 import Timetable from './components/Timetable';
 import Map from './components/Map';
 import Rule from './components/Rule';
+import Access from './components/Access';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Timetable />
     <Map />
     <Rule />
+    <Access />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

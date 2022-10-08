@@ -1,7 +1,5 @@
 // ヘッダー 各セクションへのリンク 通学全体ページへのリンク
 import './Header.css';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 
 function Head() {
     const logo = "https://iconlab.kentakomiya.com/wp/wp-content/uploads/2019/09/icon0154.png";
@@ -10,7 +8,12 @@ function Head() {
             <img src={logo}/>
             <nav>
                 <ul>
-                    <li><AnchorLink href="./slogan" offset="50">スローガン</AnchorLink></li>
+                    <li><a href='#Slogan'>スローガン</a></li>
+                    <li><a href='#Program'>企画一覧</a></li>
+                    <li><a href='#Timetable'>タイムテーブル</a></li>
+                    <li><a href='#Map'>会場マップ</a></li>
+                    <li><a href='#Rule'>キャンパス注意事項</a></li>
+                    <li><a href='#Access'>会場アクセス</a></li>
                 </ul>
             </nav>
         </header>

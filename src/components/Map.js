@@ -1,11 +1,10 @@
-// キャンパスの地図と住所
+// 場内マップ
 import './Map.css';
 
 function Map() {
-    const a = "吉田文太";
     return (
-        <div id="Map">
-            <p>{a}</p>
+        <div id="Map" className='section'>
+            <h1>会場内マップ</h1>
         </div>
     );
 }

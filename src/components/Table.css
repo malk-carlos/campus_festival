@@ -1,0 +1,53 @@
+table.timetable-table {
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.timetable-table td {
+    font-size: 150%;
+}
+
+.time td {
+    font-size: 100%;
+}
+
+.timetable-table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.timetable-table>thead th,
+.timetable-table>tbody>tr td {
+    text-align: center;
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+}
+
+.timetable-table-bordered>thead>th,
+.timetable-table-bordered>tbody>tr>td {
+    border: 1px solid #dddddd;
+}
+
+.timetable-table>thead th {
+    font-size: 1.25em;
+}
+
+.timetable-table>thead th .month {
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+.timetable-table>thead th .day {
+    font-size: 0.6em;
+}
+
+.time {
+    width: 15%;
+}
+
+.data {
+    width: 25%;
+}

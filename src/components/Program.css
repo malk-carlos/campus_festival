@@ -1,0 +1,28 @@
+.pgGroup {
+    display: inline-block;
+}
+
+.program {
+    width: 25vmax;
+    height: 25vmax;
+    display: inline-block;
+    background-color: #eee;
+    margin: 10px 10px;
+    text-align: center;
+    overflow: scroll;
+}
+
+.program h3 {
+    margin: 2.5% 5%;
+    text-align: left;
+}
+
+.program img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.program p {
+    white-space: nowrap;
+    margin-left: 5%;
+}

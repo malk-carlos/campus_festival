@@ -6,7 +6,7 @@ function Slogan() {
     return (
         <div id="Slogan" className='section'>
             <h1>スローガン</h1>
-            <p>2022年度広島キャンパスキャンフェスティバルのスローガンは<strong>{slogan}</strong>に決定しました！！</p>
+            <p>Campus Festival 2022 in Hiroshimaのスローガンは<strong>{slogan}</strong>に決定しました！！</p>
         </div>
     );
 }

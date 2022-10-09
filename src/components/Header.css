@@ -1,0 +1,16 @@
+h1 {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    display: inline-block;
+    margin-right: 1em;
+}

@@ -3,9 +3,11 @@
 }
 
 header {
-  height: 100vh;
+  height: 10vmin;
+  width: 100vw;
 }
 
 .section {
   margin-bottom: 10%;
+  width: 100vw;
 }

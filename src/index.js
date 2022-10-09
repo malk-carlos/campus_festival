@@ -18,8 +18,8 @@ ReactDOM.render(
     <Program />
     <Timetable />
     <Map />
-    <Rule />
     <Access />
+    <Rule />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

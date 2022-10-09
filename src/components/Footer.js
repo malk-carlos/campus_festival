@@ -2,9 +2,8 @@
 import './Footer.css';
 
 function Foot() {
-    const a = "foot";
     return (
-        <div id="Footer">
+        <footer>
             <h1>Campus Festival 2022 in Hiroshima</h1>
             <nav>
                 <ul>
@@ -17,7 +16,7 @@ function Foot() {
                 </ul>
             </nav>
             <p id='copy'>&copy; Campus Festival 2022 in Hiroshima, Malk is All rights reserved.</p>
-        </div>
+        </footer>
     );
 }
 export default Foot;

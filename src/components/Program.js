@@ -51,7 +51,7 @@ function Program() {
                     <p>罰だから</p>
                 </div>
                 <div className='program'>
-                    <h3>【踊ってみた】女々しくてMV完全再現</h3>
+                    <h3>【踊ってみた】女々しくてMV再現</h3>
                     <img src='https://www.shoshinsha-design.com/wp-content/uploads/2020/05/noimage-760x460.png' />
                     <p>ツライさん監督就任おめでとう！！そしてありがとう！！</p>
                 </div>

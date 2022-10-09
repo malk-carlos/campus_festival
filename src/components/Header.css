@@ -1,16 +1,16 @@
-h1 {
+header h1 {
     display: inline-block;
 }
 
-nav {
+header nav {
     display: inline-block;
 }
 
-ul {
+header ul {
     text-align: right;
 }
 
-li {
+header li {
     display: inline-block;
     margin-right: 1em;
 }

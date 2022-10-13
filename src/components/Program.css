@@ -2,6 +2,12 @@
     display: inline-block;
 }
 
+.pgWrap {
+    overflow: scroll;
+    white-space: nowrap;
+    margin-bottom: 5vmin;
+}
+
 .program {
     width: 25vmax;
     height: 25vmax;
@@ -9,6 +15,7 @@
     background-color: #eee;
     margin: 10px 10px;
     text-align: center;
+    white-space: initial;
     overflow: scroll;
 }
 

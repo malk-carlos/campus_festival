@@ -3,6 +3,7 @@ header {
     width: 100vw;
     vertical-align: middle;
     position: relative;
+    background-color: #f75c3d;
 }
 
 header #logo {
@@ -26,4 +27,11 @@ header nav {
 header li {
     display: inline-block;
     margin-right: 1em;
+    padding: 1vmin;
+}
+
+header li a{
+    color: #ffffff;
+    font-size: 2vmin;
+    text-decoration: none;
 }

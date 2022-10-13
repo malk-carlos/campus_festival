@@ -1,13 +1,26 @@
-header h1 {
-    display: inline-block;
+header {
+    height: 10vmin;
+    width: 100vw;
+    vertical-align: middle;
+    position: relative;
+}
+
+header #logo {
+    display: inline-flex;
+    width: 10%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
 }
 
 header nav {
-    display: inline-block;
-}
-
-header ul {
-    text-align: right;
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header li {

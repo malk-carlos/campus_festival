@@ -1,13 +1,28 @@
+
+/* 
+color: #fdc167; //薄い
+color: #f75c3d; //濃い
+color: #ec7b7c; //淡い
+*/
+
 * {
   margin: 0;
-}
-
-header {
-  height: 10vmin;
-  width: 100vw;
 }
 
 .section {
   margin-bottom: 10%;
   width: 100vw;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.sec-title {
+  color: #555;
+  padding-left: 5%;
+  margin: 2.5%;
+  width: 80%;
+  border-bottom: solid 2px #f75c3d;
+  /* text-shadow: #ec7b7c33 3px 1.5px 3px; */
 }

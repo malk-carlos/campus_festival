@@ -6,7 +6,7 @@ import './Program.css';
 function Program() {
     return (
         <div id="Program" className='section'>
-            <h1>企画一覧</h1>
+            <h1 className='sec-title'>企画一覧</h1>
             <div id='stage' className='pgGourp'>
                 <h2>ステージ企画</h2>
                 <div className='program'>

@@ -5,7 +5,7 @@ import './Timetable.css';
 function Timetable() {
     return (
         <div id="Timetable" className='section'>
-            <h1>タイムテーブル</h1>
+            <h1 className='sec-title'>タイムテーブル</h1>
             <p>現在調整中</p>
             <Table/ >
         </div>

@@ -4,7 +4,7 @@ import './Map.css';
 function Map() {
     return (
         <div id="Map" className='section'>
-            <h1>会場内マップ</h1>
+            <h1 className='sec-title'>場内マップ</h1>
         </div>
     );
 }

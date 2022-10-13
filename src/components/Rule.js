@@ -4,7 +4,7 @@ import './Rule.css';
 function Rule() {
     return (
         <div id="Rule" className='section'>
-            <h1>注意事項</h1>
+            <h1 className='sec-title'>注意事項</h1>
             <div id='guardian'>
                 <h2>保護者様への注意事項</h2>
 
@@ -24,7 +24,7 @@ function Rule() {
                 <h3>大枠2</h3>
                 <p>具体2</p>
             </div>
-            
+
             <div id='site'>
                 <h2>WEBサイトに関する注意事項</h2>
                 <p>このサイトは生徒が運営しています。掲載する情報には細心の注意を払っておりますが、より正確な情報は<a href='https://nnn.ed.jp/' target='_blank' rel='noopener noreferrer'>N高等学校公式サイト</a>をご覧ください。</p>

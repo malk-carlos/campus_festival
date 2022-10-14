@@ -1,4 +1,3 @@
-
 /* 
 color: #fdc167; //薄い
 color: #f75c3d; //濃い
@@ -11,7 +10,6 @@ color: #ec7b7c; //淡い
 }
 
 .section {
-  margin-bottom: 10%;
   margin: auto auto 10%;
   width: 75vw;
 }

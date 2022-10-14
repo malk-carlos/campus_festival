@@ -2,7 +2,7 @@
 import './Slogan.css';
 
 function Slogan() {
-    const slogan = "検討中"
+    const slogan = "Défi"
     return (
         <div id="Slogan" className='section'>
             <h1 className='sec-title'>スローガン</h1>

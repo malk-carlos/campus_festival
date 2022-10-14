@@ -3,7 +3,7 @@ header {
     width: 100vw;
     vertical-align: middle;
     position: relative;
-    background-color: #f75c3d;
+    background-color: #f75c3d; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
 }
 
 header #logo {
@@ -30,8 +30,14 @@ header li {
     padding: 1vmin;
 }
 
-header li a{
+header li a {
     color: #ffffff;
     font-size: 2vmin;
     text-decoration: none;
+    transition: .2s;
+}
+
+header li a:hover {
+    text-shadow: 0 0 .2em #fff8;
+    transition: .2s;
 }

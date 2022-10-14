@@ -1,3 +1,9 @@
+#Rule {
+    background-color: #f8f8f8;
+    padding: 0 12.5vw 10vmin;
+    margin-bottom: 0;
+}
+
 #Rule>div {
     margin-top: 2.5vmin;
 }

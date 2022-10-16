@@ -1,4 +1,12 @@
-strong {
+#Slogan strong {
     font-size: large;
     text-decoration: underline;
+}
+
+#Slogan p {
+    margin-top: 1.5vmin;
+}
+
+#toblog {
+    opacity: .8;
 }

@@ -9,6 +9,12 @@ color: #ec7b7c; //淡い
   color: #555;
 }
 
+*::selection {
+  color: #fff;
+  background-color: #ec7b7ccc;
+  text-decoration: underline dotted #fff;
+}
+
 .section {
   margin: auto auto 10%;
   width: 75vw;

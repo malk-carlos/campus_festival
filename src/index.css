@@ -15,6 +15,18 @@ color: #ec7b7c; //淡い
   text-decoration: underline dotted #fff;
 }
 
+html {
+  overflow: auto;
+}
+
+body {
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+}
+
 .section {
   margin: auto auto 10%;
   width: 75vw;

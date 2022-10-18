@@ -25,6 +25,10 @@
     overflow: scroll;
 }
 
+.program::-webkit-scrollbar{
+    display: none;
+}  
+
 .program h3 {
     margin: 2.5% 5%;
     text-align: left;

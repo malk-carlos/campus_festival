@@ -9,7 +9,7 @@ function Access() {
     const tra_src = 'https://www.hiroden.co.jp/train/route-guide/stop-guide/u-3.html';
     // バス路線掲載ページurl （ナビタイム）
     const bus_src ='https://www.navitime.co.jp/bus/diagram/direction/00093111/';
-    
+
     return (
         <div id="Access" className='section'>
             <h1 className='sec-title'>会場アクセス</h1>
@@ -17,22 +17,26 @@ function Access() {
                 <iframe src={map_src} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div id='texts'>
-                <h2>N高等学校・S高等学校 広島キャンパス</h2>
-                <p>{adress}</p>
+                <div>
+                    <h2>N高等学校・S高等学校 広島キャンパス</h2>
+                    <p>{adress}</p>
+                </div>
 
                 {/* ここのまとめ方もう少しスマートにしたい */}
-                <p id='nearest'>最寄駅</p>
-                <div id='train' className='ways'>
-                    <h3><a href={tra_src} target='_blank' rel='noopener noreferrer'>中電前（路面電車）</a></h3>
-                    <p><span id='fir'>●</span>1号線 &#091;広島駅 - 広島港&#093;</p>
-                    <p><span id='thi'>●</span>3号線 &#091;広電西広島 - 広島港&#093;</p>
-                    <p><span id='sev'>●</span>7号線 &#091;横川駅 - 広電本社前&#093;</p>
-                </div>
-                <div id='bus' className='ways'> {/* バス路線多すぎるので路面電車のように停車する路線を表記するのは非現実的 */}
-                    <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前（バス）</a></h3>
-                </div>
-                <div id='hondori' className='ways'> {/* 「本通駅（アストラムライン）」だけだと味気ない */}
-                    <h3>本通駅（アストラムライン）</h3>
+                <div>
+                    <p id='nearest'>最寄駅</p>
+                    <div id='train' className='ways'>
+                        <h3><a href={tra_src} target='_blank' rel='noopener noreferrer'>中電前（路面電車）</a></h3>
+                        <p><span id='fir'>●</span>1号線 &#091;広島駅 - 広島港&#093;</p>
+                        <p><span id='thi'>●</span>3号線 &#091;広電西広島 - 広島港&#093;</p>
+                        <p><span id='sev'>●</span>7号線 &#091;横川駅 - 広電本社前&#093;</p>
+                    </div>
+                    <div id='bus' className='ways'> {/* バス路線多すぎるので路面電車のように停車する路線を表記するのは非現実的 */}
+                        <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前（バス）</a></h3>
+                    </div>
+                    <div id='atom' className='ways'> {/* 「本通駅（アストラムライン）」だけだと味気ない */}
+                        <h3>本通駅（アストラムライン）</h3>
+                    </div>
                 </div>
             </div>
         </div>

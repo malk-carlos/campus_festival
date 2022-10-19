@@ -20,6 +20,18 @@
     vertical-align: top;
     margin-left: 5%;
     width: 50%;
+    position: relative;
+    height: 400px;
+}
+
+#texts>div:first{
+    position: absolute;
+    top: 0;
+}
+
+#texts>div:last-of-type{
+    position: absolute;
+    bottom: 0;
 }
 
 #texts h2 {
@@ -32,8 +44,12 @@
     font-size: 2.5vmin;
 }
 
-.ways {
-    margin-top: 2.5vmin;
+#train{
+    margin-top: 2vmin;
+}
+
+#bus,#atom{
+    margin-top: 4vmin;
 }
 
 .ways h3 {

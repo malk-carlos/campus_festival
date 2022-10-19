@@ -32,6 +32,10 @@ body {
   width: 75vw;
 }
 
+.section:nth-of-type(2n) {
+  background-color: #f7f7f7;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -39,6 +43,7 @@ body {
 .sec-title {
   color: #555;
   padding-left: 5%;
+  padding-top: 2.5%;
   margin: 2.5%;
   border-bottom: solid 2px #f75c3d;
 }

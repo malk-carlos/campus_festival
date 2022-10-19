@@ -1,4 +1,16 @@
 #Map {
-    background-color: #f8f8f8;
     padding: 0 12.5vw;
+}
+
+#imgwrap {
+    width: 80%;
+    margin: auto;
+}
+
+#imgwrap img {
+    width: 100%;
+}
+
+#Map>div h2:first-of-type span {
+    color: orange;
 }

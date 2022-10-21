@@ -11,6 +11,13 @@
     width: 100%;
 }
 
-#Map>div h2:first-of-type span {
+#Map div h2 span {
+    /* text-shadow: 0 0 .5vmin #; */
+    /* color: #fff; */
+}
+
+#super_stage h2>span {
     color: orange;
+    /* text-shadow: 0 0 2vmin orange; */
+    margin-right: .5vmin;
 }

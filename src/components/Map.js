@@ -10,8 +10,10 @@ function Map() {
                 <div id='imgwrap'>
                     <img src={Mapimg} />
                 </div>
-                <h2><span>●</span>ステージ</h2>
-                <p>生徒によるバンド演奏や演劇などを予定しています。</p>
+                <div id='super_stage'>
+                    <h2><span>●</span>超ステージ</h2>
+                    <p>生徒によるバンド演奏や演劇などを予定しています。</p>
+                </div>
                 {/* 各箇所の名前、そこで行われること、入場規制の有無、観覧の可否 */}
             </div>
             

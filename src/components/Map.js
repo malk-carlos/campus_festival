@@ -4,12 +4,13 @@ import Mapimg from './asset/map.png'
 
 function Map() {
     return (
+        <div className='sec-wrap'>
         <div id="Map" className='section'>
             <h1 className='sec-title'>場内マップ</h1>
-            <div>
-                <div id='imgwrap'>
-                    <img src={Mapimg} />
-                </div>
+            <div id='imgwrap'>
+                <img src={Mapimg} />
+            </div>
+            <div id='captions'>
                 <div id='super_stage'>
                     <h2><span>●</span>超ステージ</h2>
                     <p>生徒によるバンド演奏や演劇などを予定しています。</p>
@@ -20,7 +21,7 @@ function Map() {
                 </div>
                 {/* 各箇所の名前、そこで行われること、入場規制の有無、観覧の可否 */}
             </div>
-            
+        </div>
         </div>
     );
 }

@@ -27,12 +27,34 @@ body {
   width: 100vw;
 }
 
-.section {
-  margin: auto auto 10%;
-  width: 75vw;
+.sec-wrap {
+  width: 100vw;
 }
 
-.section:nth-of-type(2n) {
+.section { /* PCサイズ */
+  margin: auto auto 10%;
+  width: 70vw;
+}
+
+@media screen and (max-width: 800px) { /* 中サイズ */
+  .section {
+    width: 80%; 
+    padding: auto 10%;
+    margin: auto auto 10%;
+    background-color: #f75c3d;
+  }
+}
+
+@media screen and (max-width: 360px) { /* スマホサイズ */
+  .section {
+    width: 80%; 
+    padding: auto 10%;
+    margin: auto auto 10%;
+    background-color: #f75c3d;
+  }
+}
+
+.sec-wrap:nth-of-type(2n) {
   background-color: #f7f7f7;
 }
 
@@ -44,6 +66,6 @@ body {
   color: #555;
   padding-left: 5%;
   padding-top: 2.5%;
-  margin: 2.5%;
+  margin-bottom: 2.5%;
   border-bottom: solid 2px #f75c3d;
 }

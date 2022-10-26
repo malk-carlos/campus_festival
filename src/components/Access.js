@@ -11,6 +11,7 @@ function Access() {
     const bus_src ='https://www.navitime.co.jp/bus/diagram/direction/00093111/';
 
     return (
+        <div className='sec-wrap'>
         <div id="Access" className='section'>
             <h1 className='sec-title'>会場アクセス</h1>
             <div id='area-map'>
@@ -39,6 +40,7 @@ function Access() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

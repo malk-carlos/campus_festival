@@ -4,7 +4,6 @@
 import './Program.css';
 import Stage from './StagePrg';
 import Campus from './CampusPrg';
-import Broadcast from './BroadcastPrg';
 
 function Program() {
     return (
@@ -13,7 +12,6 @@ function Program() {
             <h1 className='sec-title'>企画一覧</h1>
             <Stage/>
             <Campus/>
-            <Broadcast/>
         </div>
         </div>
     );

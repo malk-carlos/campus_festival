@@ -45,12 +45,9 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) { /* スマホサイズ */
-  .section {
-    width: 80%; 
-    padding: auto 10%;
-    margin: auto auto 10%;
-    background-color: #f75c3d;
+@media screen and (min-width: 800px) {
+  .mobile {
+    display: none;
   }
 }
 

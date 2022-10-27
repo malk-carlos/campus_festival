@@ -3,7 +3,7 @@ header {
     width: 100vw;
     vertical-align: middle;
     position: relative;
-    background-color: #f75c3d; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
+    background-color: #ec7b7c; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
 }
 
 header #logo {
@@ -40,4 +40,19 @@ header li a {
 header li a:hover {
     text-shadow: 0 0 .2em #fff8;
     transition: .2s;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 15vw;
+    }
+    
+    header #logo {
+        width: 25%;
+        left: 7.5%;
+    }
+
+    header nav {
+        display: none;
+    }
 }

@@ -19,7 +19,7 @@
 #texts {
     vertical-align: top;
     margin-left: 5%;
-    width: 50%;
+    width: 55%;
     position: relative;
     height: 400px;
 }
@@ -40,20 +40,20 @@
 
 #nearest {
     font-weight: bold;
-    margin-top: 2vmin;
-    font-size: 2.5vmin;
+    margin-top: 1vmin;
+    font-size: 3vmin;
 }
 
-#train{
+.ways{
     margin-top: 2vmin;
-}
-
-#bus,#atom{
-    margin-top: 4vmin;
 }
 
 .ways h3 {
     font-weight: lighter;
+}
+
+#bus>p{
+    margin-left: 1vmin;
 }
 
 #fir {
@@ -69,4 +69,45 @@
 #sev {
     color: #005B55;
     margin: auto 1vmin;
+}
+
+@media screen and (max-width: 800px) {
+    #Access {
+        text-align: center;
+    }
+
+    #area-map {
+        width: 80%;
+        display: block;
+    }
+
+    #texts {
+        width: 80%;
+        display: block;
+        text-align: left;
+        margin: 1vmin auto auto;
+    }
+
+    #texts h2 {
+        text-align: center;
+        font-size: 3.5vmin;
+    }
+
+    .adress {
+        font-size: smaller;
+    }
+
+    #nearest {
+        font-weight: bold;
+        margin-top: 2vmin;
+        font-size: 3.5vmin;
+    }
+
+    #train{
+        margin-top: 2vmin;
+    }
+
+    #bus,#atom{
+        margin-top: 4vmin;
+    }
 }

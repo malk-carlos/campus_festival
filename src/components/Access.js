@@ -2,7 +2,8 @@
 import './Access.css';
 
 function Access() {
-    const adress = '〒730-0051 広島県広島市中区大手町3丁目1-9 鯉城広島サンケイビル4階';
+    const adress1 = '〒730-0051';
+    const adress2 =  '広島県広島市中区大手町3丁目1-9 鯉城広島サンケイビル4階';
     // 埋め込み地図のソース
     const map_src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.4807299585036!2d132.45334231321408!3d34.38912510075575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa33ded923237%3A0x7702bca58f918468!2zTumrmOetieWtpuagoSDvvaVT6auY562J5a2m5qChIOW6g-WztuOCreODo-ODs-ODkeOCue-9nOmAmuS_oeWItumrmOagoQ!5e0!3m2!1sja!2sjp!4v1665245446974!5m2!1sja!2sjp'
     // 広電ページurl
@@ -20,7 +21,7 @@ function Access() {
             <div id='texts'>
                 <div>
                     <h2>N高等学校・S高等学校 広島キャンパス</h2>
-                    <p>{adress}</p>
+                    <p className='adress'>{adress1}</p><p className='adress'>{adress2}</p>
                 </div>
 
                 {/* ここのまとめ方もう少しスマートにしたい */}
@@ -33,7 +34,8 @@ function Access() {
                         <p><span id='sev'>●</span>7号線 &#091;横川駅 - 広電本社前&#093;</p>
                     </div>
                     <div id='bus' className='ways'> {/* バス路線多すぎるので路面電車のように停車する路線を表記するのは非現実的 */}
-                        <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前（バス）</a></h3>
+                        <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前 / 放送会館前（バス）</a></h3>
+                        <p>中電前バス停から徒歩1分 / 放送会館前バス停から徒歩3分</p>
                     </div>
                     <div id='atom' className='ways'> {/* 「本通駅（アストラムライン）」だけだと味気ない */}
                         <h3>本通駅（アストラムライン）</h3>

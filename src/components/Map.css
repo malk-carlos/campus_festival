@@ -15,6 +15,17 @@
     margin-top: 5vmin;
 }
 
+#captions>div {
+    display: inline-block;
+    width: 45%;
+    margin: auto 2.5%;
+    vertical-align: top;
+}
+
+#captions>div>div {
+    margin-bottom: 1.5vmin;
+}
+
 /* #captions>div {
     margin-left: 5%;
     width: 40%;
@@ -27,11 +38,12 @@
     display: none;
 }   */
 
-#captions>div>h2>span {
-    margin-right: .5vmin;
+#captions>div>div>h3>span {
+    margin: auto .5vmin;
 }
 
-#super_stage h2>span {
-    color: orange;
-    /* text-shadow: 0 0 2vmin orange; */
+.group {
+    /* font-style: italic; */
+    color: #888;
+    font-size: small;
 }

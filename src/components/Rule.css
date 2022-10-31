@@ -6,3 +6,16 @@
 #Rule>div {
     margin-top: 2.5vmin;
 }
+
+#Rule>div>h2 {
+    margin: 1vmin auto;
+    /* フォント変えるなど目立たせる工夫 / 見た目がのっぺりしない工夫 */
+}
+
+#Rule>div>h3 {
+    margin: 1vmin;
+}
+
+#Rule>div>p {
+    margin: auto 3vmin .5vmin;
+}

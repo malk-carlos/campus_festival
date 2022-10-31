@@ -16,7 +16,17 @@ function Table() {
                     <td className='campus data'></td>
                 </tr>
                 <tr>
+                    <td className='time'><span>13:30</span></td>
+                    <td className='stage data'></td>
+                    <td className='campus data'></td>
+                </tr>
+                <tr>
                     <td className='time'><span>14:00</span></td>
+                    <td className='stage data'></td>
+                    <td className='campus data'></td>
+                </tr>
+                <tr>
+                    <td className='time'><span>14:30</span></td>
                     <td className='stage data'></td>
                     <td className='campus data'></td>
                 </tr>
@@ -26,7 +36,17 @@ function Table() {
                     <td className='campus data'></td>
                 </tr>
                 <tr>
+                    <td className='time'><span>15:30</span></td>
+                    <td className='stage data'></td>
+                    <td className='campus data'></td>
+                </tr>
+                <tr>
                     <td className='time'><span>16:00</span></td>
+                    <td className='stage data'></td>
+                    <td className='campus data'></td>
+                </tr>
+                <tr>
+                    <td className='time'><span>16:30</span></td>
                     <td className='stage data'></td>
                     <td className='campus data'></td>
                 </tr>

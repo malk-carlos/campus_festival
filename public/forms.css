@@ -1,0 +1,76 @@
+/* 共通 */
+* {
+    /* color: #fff; */
+    text-align: center;
+}
+
+body {
+    /* background-color: #fdc16733; */
+    background: linear-gradient( 100deg, #fdc16733, 90%, #ec7b7c);
+}
+
+/* contact.html */
+#contact_html h1 {
+    color: #f75c3d;
+}
+
+#c_discription {
+    margin-bottom: 50px;
+}
+
+input:not(.ans_type) {
+    width: 300px;
+    height: 30px;
+    text-align: left;
+    outline-color: #ec7b7c;
+}
+
+#ans_type {
+    margin: auto;
+    /* text-align: center; */
+}
+
+#ans_type tr {
+    height: 50px;
+}
+
+#ans_type td {
+    text-align: left;
+}
+
+.ans_type {
+    accent-color: #ec7b7c;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    resize: none;
+    outline-color: #ec7b7c;
+}
+
+form>div {
+    margin-bottom: 30px;
+}
+
+.required {
+    color: #f75c3d;
+    font-style: italic;
+    font-size: small;
+}
+
+button {
+    color: #f75c3d;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    border: solid 3px #f75c3d;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+button:active {
+    background-color: #ec7b7c33;
+}
+
+/* thanks.html */

@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./forms.css">
     <title>お問い合わせ</title>
 </head>
-<body>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdbRTyFrTDk7DLOgI4R3oNM8pYm-LDCggaw2TF9a0est3oQ-Q/formResponse">
+<body id="contact_html">
+    <h1>Campus Festival 2022 in Hiroshima</h1>
+    <div id="c_discription">
+        <p>これは『Campus Festival 2022 in Hiroshima』の公式サイトについてのお問い合わせやご意見専用のフォームです。</p>
+        <p></p>
+    </div>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdbRTyFrTDk7DLOgI4R3oNM8pYm-LDCggaw2TF9a0est3oQ-Q/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <div>
-            <p>あいうえお</p>
-            <p>くぁwせdrftgyふじこlp；</p>
+            <label for="user_name">お名前（匿名可）</label><br>
+            <input type="text" name="entry.117838857" id="user_name" autofocus>
         </div>
         <div>
-            <label for="user_name">お名前</label>
-            <input type="text" name="entry.117838857" id="user_name">
+            <p>ご希望の回答方法<span class="required">*必須</span></p>
+            <table id="ans_type">
+                <tr>
+                    <td><label for="slack">Slackで回答（生徒のみ）</label></td>
+                    <td><input type="radio" name="entry.1562847734" class="ans_type" id="slack" aria-label="1" aria-pointset="1" value="Slack（生徒専用）" required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">メールで回答（次の項で入力）</label></td>
+                    <td><input type="radio" name="entry.1562847734" class="ans_type" id="mail" aria-label="2" aria-pointset="2" value="電子メール" required></td>
+                </tr>
+            </table>
         </div>
         <div>
-            <p>ご希望の回答方法</p>
-            <label for="slack">Slackで回答（生徒のみ）</label>
-            <input type="radio" name="entry.1562847734" id="slack">
-            <label for="mail">メールで回答（次の項で入力）</label>
-            <input type="radio" name="entry.1562847734" id="mail">
+            <label for="ans_to">連絡先</label><br>
+            <input type="text" name="entry.2769503" id="ans_to" placeholder="回答専用（メールアドレス/slack名）">
         </div>
         <div>
-            <label for="user_email">メールアドレス</label>
-            <input type="text" name="entry.2769503" id="user_email">
-        </div>
-        <div>
-            <label for="about">お問い合わせ内容</label>
-            <textarea name="entry.8021258" id="about" cols="30" rows="10"></textarea>
+            <label for="about">お問い合わせ内容<span class="required">*必須</span></label><br>
+            <textarea name="entry.8021258" id="about" cols="30" rows="10" required></textarea>
         </div>
         <div>
             <button type="submit">done</button>
         </div>
     </form>
+    <script>
+        let submitted = false;
+        const page_transition = function () {
+            if(submitted){
+                window.location = 'thanks.html';
+            }
+        }
+    </script>
+    <iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>    
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./forms.css">
+    <link rel="icon" src="%PUBLIC_URL%/favicon.ico" />
     <title>お問い合わせ</title>
 </head>
 <body id="contact_html">
@@ -18,18 +19,12 @@
             <label for="user_name">お名前（匿名可）</label><br>
             <input type="text" name="entry.117838857" id="user_name" autofocus>
         </div>
-        <div>
+        <div id="ans_type">
             <p>ご希望の回答方法<span class="required">*必須</span></p>
-            <table id="ans_type">
-                <tr>
-                    <td><label for="slack">Slackで回答（生徒のみ）</label></td>
-                    <td><input type="radio" name="entry.1562847734" class="ans_type" id="slack" aria-label="1" aria-pointset="1" value="Slack（生徒専用）" required><br></td>
-                </tr>
-                <tr>
-                    <td><label for="mail">メールで回答（次の項で入力）</label></td>
-                    <td><input type="radio" name="entry.1562847734" class="ans_type" id="mail" aria-label="2" aria-pointset="2" value="電子メール" required></td>
-                </tr>
-            </table>
+            <input type="radio" name="entry.1562847734" class="ans_type" id="slack" aria-label="1" aria-pointset="1" value="Slack（生徒専用）" required>
+            <label class="ans_type_lab" for="slack">Slackで回答<br>（生徒のみ）</label>
+            <input type="radio" name="entry.1562847734" class="ans_type" id="mail" aria-label="2" aria-pointset="2" value="電子メール" required>
+            <label class="ans_type_lab" for="mail">メールで回答<br>（次の項で入力）</label>
         </div>
         <div>
             <label for="ans_to">連絡先</label><br>

@@ -1,41 +1,45 @@
 footer {
     text-align: center;
     background-color: #ec7b7c;
-    height: 20vmax;
+    /* height: 20vmax; */
     width: 100%;
 }
 
-footer h1 {
-    display: inline-block;
-    color: #fff;
-    margin-top: 5vmin;
+@media screen and (max-width: 800px) {
+    footer h1 {
+        display: inline-block;
+        color: #fff;
+        margin-top: 2.5vmin;
+        font-size: 4.5vmin;
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    footer h1 {
+        display: inline-block;
+        color: #fff;
+        margin-top: 2.5vmin;
+    }
 }
 
 footer nav {
     margin-top: .5%;
 }
 
-footer ul {
-    padding: 0;
-}
-
-footer li {
+.foot_div {
+    text-align: left;
     display: inline-block;
-    padding: .5% 1em;
-    border-left: solid 1px #fff;
+    vertical-align: top;
+    margin: 10px 5vmin auto;
 }
 
-footer li:last-child {
-    border-right: solid 1px #fff;
-}
-
-footer li a {
+.foot_div a {
+    display: block;
     color: #fff;
-    text-decoration: none;
-    transition: .2s;
+    margin-top: .5vmin;
 }
 
-footer li a:hover {
+.foot_div a:hover {
     text-shadow: 0 0 .2em #fff8;
     transition: .2s;
 }
@@ -56,3 +60,25 @@ footer li a:hover {
     margin-top: 2.5%;
     color: #fff;
 }
+
+
+/* 消す方向で
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: .5% 1em;
+    border-left: solid 1px #fff;
+}
+
+footer li:last-child {
+    border-right: solid 1px #fff;
+}
+
+footer li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+} */

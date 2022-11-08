@@ -1,15 +1,14 @@
 // ヘッダー 各セクションへのリンク 通学全体ページへのリンク
 import './Header.css';
+import logo from './asset/logo.png';
 
 function Head() {
-    const logo = "https://iconlab.kentakomiya.com/wp/wp-content/uploads/2019/09/icon0154.png";
     const h_broadcast = ''; //配信URL
     const h_cf_all = ''; //通学コース全体
     const h_blog = 'http://cf-blog.ns-hiroshima-campus.net'; //ブログURL
 
     return (
         <header>
-            {/* <img src={logo}/> */}
             <img id='logo' src={logo}/>
             <nav>
                 <ul>

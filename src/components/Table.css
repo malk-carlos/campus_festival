@@ -45,9 +45,32 @@ table.timetable-table {
 }
 
 .time {
-    width: 15%;
+    width: 10%;
 }
 
-.data {
-    width: 25%;
+.stage {
+    width: 30%;
+}
+
+td {
+    color: #ec7b7c;
+}
+
+.end {
+    color: #777;
+    font-size: smaller;
+    margin-right: 5%;
+}
+
+.subarea {
+    color: #3dbdbe;
+}
+
+.subarea-ex {
+    color: #3dbdbe;
+    font-size: small;
+}
+
+.junbikomi {
+    font-size: small;
 }

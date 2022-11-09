@@ -17,6 +17,9 @@ function Head() {
                     <li><a href='#Map'>場内マップ</a></li>
                     <li><a href='#Access'>会場アクセス</a></li>
                     <li><a href='#Rule'>注意事項</a></li>
+                </ul>
+                <br></br>
+                <ul>
                     <li><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL</a></li>
                     <li><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体</a></li>
                     <li><a href={h_blog} target='_blank' rel='noopener noreferrer'>ブログ</a></li>

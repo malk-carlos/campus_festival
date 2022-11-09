@@ -1,7 +1,3 @@
-#Program {
-    padding: 0 12.5vw;
-}
-
 .pgGroup {
     display: inline-block;
 }
@@ -14,7 +10,7 @@
 
 .program {
     width: 25vmax;
-    height: 25vmax;
+    height: 22.5vmax;
     display: inline-block;
     background-color: #fdc16722;
     border-radius: 0 0 5vmin 0;
@@ -34,8 +30,8 @@
 }
 
 .program img {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: calc(80%*9/16);
     object-fit: cover;
     margin: 0 auto;
 }

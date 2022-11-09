@@ -37,9 +37,21 @@ footer nav {
     display: block;
     color: #fff;
     margin-top: .5vmin;
+    text-decoration: none;
 }
 
 .foot_div a:hover {
+    text-shadow: 0 0 .2em #fff8;
+    transition: .2s;
+}
+
+.fnavs {
+    color: #fff;
+    margin-top: .5vmin;
+    text-decoration: none;
+}
+
+.fnavs:hover {
     text-shadow: 0 0 .2em #fff8;
     transition: .2s;
 }

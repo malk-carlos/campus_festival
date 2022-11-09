@@ -1,5 +1,6 @@
 // フッター 各リンク
 import './Footer.css';
+import { Link as Scroll } from 'react-scroll';
 
 function Foot() {
     const f_broadcast = ''; //配信URL
@@ -24,11 +25,11 @@ function Foot() {
             </nav> */}
             <nav>
                 <div className='foot_div' id='internal'>{/* サイト内遷移 */}
-                    <a href='#Program'>企画一覧</a>
-                    <a href='#Timetable'>タイムテーブル</a>
-                    <a href='#Map'>場内マップ</a>
-                    <a href='#Access'>会場アクセス</a>
-                    <a href='#Rule'>注意事項</a>
+                    <Scroll to='Program' smooth className='fnavs'>企画一覧</Scroll>
+                    <Scroll to='Timetable' smooth className='fnavs'>タイムテーブル</Scroll>
+                    <Scroll to='Map' smooth className='fnavs'>場内マップ</Scroll>
+                    <Scroll to='Access' smooth className='fnavs'>会場アクセス</Scroll>
+                    <Scroll to='Rule' smooth className='fnavs'>注意事項</Scroll>
                 </div>
                 <div className='foot_div' id='external'>
                     <a href={f_broadcast} target='_blank' rel='noopener noreferrer'>配信URL</a>

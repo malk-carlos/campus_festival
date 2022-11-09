@@ -50,6 +50,20 @@ header li a:hover {
     transition: .2s;
 }
 
+.navs {
+    color: #ffffff;
+    font-size: 2vmin;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 1vmin;
+    transition: .2s;
+}
+
+.navs:hover {
+    text-shadow: 0 0 .2em #fff8;
+    transition: .2s;
+}
+
 @media screen and (max-width: 800px) {
     header {
         height: 15vw;

@@ -1,6 +1,7 @@
 // フッター 各リンク
 import './Footer.css';
 import { Link as Scroll } from 'react-scroll';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function Foot() {
     const f_broadcast = ''; //配信URL
@@ -10,19 +11,6 @@ function Foot() {
     return (
         <footer>
             <h1>Campus Festival 2022 in Hiroshima</h1>
-            {/* <nav>
-                <ul>
-                    <li><a href='#Program'>企画一覧</a></li>
-                    <li><a href='#Timetable'>タイムテーブル</a></li>
-                    <li><a href='#Map'>場内マップ</a></li>
-                    <li><a href='#Access'>会場アクセス</a></li>
-                    <li><a href='#Rule'>注意事項</a></li>
-                    <li><a href={f_broadcast} target='_blank' rel='noopener noreferrer'>配信URL</a></li>
-                    <li><a href={f_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体</a></li>
-                    <li><a href={f_blog} target='_blank' rel='noopener noreferrer'>ブログ</a></li>
-                    <li><a href='../contact.html' target='_blank' rel='noopener noreferrer'>お問い合わせ</a></li>
-                </ul>
-            </nav> */}
             <nav>
                 <div className='foot_div' id='internal'>{/* サイト内遷移 */}
                     <Scroll to='Program' smooth className='fnavs'>企画一覧</Scroll>
@@ -32,10 +20,10 @@ function Foot() {
                     <Scroll to='Rule' smooth className='fnavs'>注意事項</Scroll>
                 </div>
                 <div className='foot_div' id='external'>
-                    <a href={f_broadcast} target='_blank' rel='noopener noreferrer'>配信URL</a>
-                    <a href={f_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体</a>
-                    <a href={f_blog} target='_blank' rel='noopener noreferrer'>ブログ</a>
-                    <a href='../contact.html' target='_blank' rel='noopener noreferrer'>お問い合わせ</a>
+                    <a href={f_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
+                    <a href={f_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
+                    <a href={f_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
+                    <a href='../contact.html' target='_blank' rel='noopener noreferrer'>お問い合わせ<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
                 </div>
             </nav>
             {/* <div id='disclaimer'>

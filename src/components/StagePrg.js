@@ -5,7 +5,9 @@ import band from './asset/band.png';
 import gf from './asset/godfield.png';
 import presen from './asset/presen.png';
 import quiz from './asset/quiz.png';
-import dktk from './asset/defiktok.png'
+import dktk from './asset/defiktok.png';
+import act from './asset/act.png';
+import hako from './asset/hako.png';
 
 function Stageprg() {
     return (
@@ -18,8 +20,8 @@ function Stageprg() {
                     <p>今年度もサプライズ企画を準備しています！当日をお楽しみに！</p>
                 </div>
                 <div className='program'>
-                    <h3>演劇部公演{/* 演劇タイトル発表OKなら紹介 */}</h3>
-                    <img src={noimage} />
+                    <h3>演劇部公演 ~アポカリプス女子会~</h3>
+                    <img src={act} />
                     <p>突如として現れたゾンビに脅かされた世界。生き延びた3人を待ち受ける未来とは─。</p>
                 </div>
                 <div className='program'>
@@ -39,7 +41,7 @@ function Stageprg() {
                 </div>
                 <div className='program'>
                     <h3>箱の中身はなんだろな</h3>
-                    <img src={noimage} />
+                    <img src={hako} />
                     <p>感触だけで中身のものを当てるテレビでよくみるあの企画をキャンフェスでも開催します！<br></br>果たして挑戦者は中身を当てることができるのでしょうか！？</p>
                 </div>
                 <div className='program'>

@@ -23,7 +23,7 @@ function Table() {
                 </tr>
                 <tr>
                     <td className='time subarea'>14:35</td>
-                    <td className='stage data subarea'>超プレゼン <span className='end'>-14:55</span><span className='subarea-ex'>*サブ配信エリア</span></td>
+                    <td className='stage data subarea'>超プレゼン <span className='end'>-14:55</span><span className='subarea-ex'>*超休憩場にて実施</span></td>
                 </tr>
                 <tr>
                     <td className='time'>14:40</td>

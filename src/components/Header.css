@@ -67,6 +67,14 @@ header li a:hover {
     transition: .2s;
 }
 
+.fa-ex {
+    margin-left: .5vmin;
+}
+
+.fa-ex path {
+    color: #fff;
+}
+
 @media screen and (max-width: 800px) {
     header {
         height: 15vw;

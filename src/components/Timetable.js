@@ -8,6 +8,7 @@ function Timetable() {
         <div className='sec-wrap'>
         <div id="Timetable" className='section'>
             <h1 className='sec-title'>タイムテーブル</h1>
+            <p className='attention'>*以下は全て予定です。連絡なく変更になる場合があります。</p>
             {/* <img src={table}/> */}
             <Table/>
         </div>

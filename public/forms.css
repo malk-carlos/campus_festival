@@ -4,13 +4,27 @@
     text-align: center;
 }
 
+body {
+    width: 100vw;
+}
+
 /* contact.html */
 #contact_html {
     background: linear-gradient( 100deg, #fdc16733, 90%, #ec7b7c);
 }
 
+/* #head {
+    display: inline;
+} */
+
+#contact_html img {
+    display: inline;
+    width: 7.5%;
+}
+
 #contact_html h1 {
     color: #f75c3d;
+    display: inline;
 }
 
 #c_discription {

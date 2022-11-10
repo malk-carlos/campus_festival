@@ -48,12 +48,8 @@ function Map() {
                         <p>ステージ袖です。</p>
                     </div>
                     <div id='super_tech'>
-                        <h3><span style={{color: '#d367f6'}}>●</span>超技術</h3>
-                        <p>技術担当者の持ち場です。機材等が置いてあります。</p>
-                    </div>
-                    <div id='super_stream'>
-                        <h3><span style={{color: '#d367f6'}}>●</span>超配信</h3>
-                        <p>配信担当者の持ち場です。機材等が置いてあります。</p>
+                        <h3><span style={{color: '#d367f6'}}>●</span>超配信・超技術</h3>
+                        <p>配信・技術の各担当者の持ち場です。機材等があります。</p>
                     </div>
                     <div id='super_back'>
                         <h3><span style={{color: '#5e5d90'}}>●</span>超控室</h3>

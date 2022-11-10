@@ -2,6 +2,14 @@
     margin-top: 15vh;
 }
 
+#Slogan>div {
+    display: inline-block;
+}
+
+#Slogan img {
+    width: 45%;
+}
+
 #Slogan strong {
     font-size: large;
     text-decoration: underline;

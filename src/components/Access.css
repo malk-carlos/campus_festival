@@ -36,6 +36,11 @@
 
 #texts h2 {
     margin: 0 0 2vmin -2.5%;
+    font-size: 2vmax;
+}
+
+.adress:nth-of-type(2){
+    font-size: 1.25vmax;
 }
 
 #nearest {
@@ -77,8 +82,12 @@
     }
 
     #area-map {
-        width: 80%;
+        width: 100%;
         display: block;
+    }
+
+    #area-map iframe {
+        height: 300px;
     }
 
     #texts {
@@ -100,7 +109,7 @@
     #nearest {
         font-weight: bold;
         margin-top: 2vmin;
-        font-size: 3.5vmin;
+        font-size: 1.5em;
     }
 
     #train{

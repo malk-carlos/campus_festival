@@ -1,5 +1,6 @@
 // キャンパスの地図と住所 / 交通手段
 import './Access.css';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function Access() {
     const adress1 = '〒730-0051';
@@ -28,13 +29,13 @@ function Access() {
                 <div>
                     <p id='nearest'>最寄駅</p>
                     <div id='train' className='ways'>
-                        <h3><a href={tra_src} target='_blank' rel='noopener noreferrer'>中電前（路面電車）</a></h3>
+                        <h3><a href={tra_src} target='_blank' rel='noopener noreferrer'>中電前（路面電車）<FaExternalLinkAlt size='2vmin' /></a></h3>
                         <p><span id='fir'>●</span>1号線 &#091;広島駅 - 広島港&#093;</p>
                         <p><span id='thi'>●</span>3号線 &#091;広電西広島 - 広島港&#093;</p>
                         <p><span id='sev'>●</span>7号線 &#091;横川駅 - 広電本社前&#093;</p>
                     </div>
                     <div id='bus' className='ways'> {/* バス路線多すぎるので路面電車のように停車する路線を表記するのは非現実的 */}
-                        <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前 / 放送会館前（バス）</a></h3>
+                        <h3><a href={bus_src} target='_blank' rel='noopener noreferrer'>中電前 / 放送会館前（バス）<FaExternalLinkAlt size='2vmin' /></a></h3>
                         <p>中電前バス停から徒歩1分 / 放送会館前バス停から徒歩3分</p>
                     </div>
                     <div id='atom' className='ways'> {/* 「本通駅（アストラムライン）」だけだと味気ない */}

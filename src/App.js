@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import Slogan from './components/Slogan';
 import Program from './components/Program';
@@ -8,10 +7,12 @@ import Map from './components/Map';
 import Rule from './components/Rule';
 import Access from './components/Access';
 import Footer from './components/Footer';
+import Loading from './Loading'
 
 function App() {
     return(
         <div id="app">
+            <Loading />
             <Header />
             <Slogan />
             <Program />

@@ -4,6 +4,9 @@ header {
     vertical-align: middle;
     position: relative;
     background-color: #ec7b7c; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
+    opacity: .8;
+    position: fixed;
+    top: 0;
 }
 
 header #logo {
@@ -13,7 +16,7 @@ header #logo {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5%;
+    left: 2.5%;
 }
 
 header nav  ul:nth-of-type(1){

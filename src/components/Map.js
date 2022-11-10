@@ -41,27 +41,23 @@ function Map() {
                     <p style={{margin: 'auto auto 2vmin'}}>入場権限のある者のみが出入りできるエリアです。対応するパスを見える位置に提げてください。</p>
                     <div id='super_stage'>
                         <h3><span style={{color: '#f4c168'}}>●</span>超ステージ</h3>
-                        <p>生徒によるバンド演奏や演劇などを予定しています。</p><p className='group'>（権限：実行委員,メディア,配信,技術,出演者,職員,ステージ）</p>
+                        <p>生徒によるバンド演奏や演劇などを予定しています。</p>
                     </div>
                     <div id='super_side'>
                         <h3><span style={{color: '#f66461'}}>●</span>超袖</h3>
-                        <p>ステージ袖です。</p><p className='group'>（権限：実行委員,メディア,配信,技術,出演者,職員,ステージ）</p>
+                        <p>ステージ袖です。</p>
                     </div>
                     <div id='super_tech'>
                         <h3><span style={{color: '#d367f6'}}>●</span>超技術</h3>
-                        <p>技術担当者の持ち場です。機材等が置いてあります。</p><p className='group'>（権限：実行委員,メディア,技術）</p>
+                        <p>技術担当者の持ち場です。機材等が置いてあります。</p>
                     </div>
                     <div id='super_stream'>
                         <h3><span style={{color: '#d367f6'}}>●</span>超配信</h3>
-                        <p>配信担当者の持ち場です。機材等が置いてあります。</p><p className='group'>（権限：実行委員,メディア,配信）</p>
+                        <p>配信担当者の持ち場です。機材等が置いてあります。</p>
                     </div>
                     <div id='super_back'>
                         <h3><span style={{color: '#5e5d90'}}>●</span>超控室</h3>
-                        <p>ステージ出演者の控え室です。</p><p className='group'>（権限：実行委員,出演者）</p>
-                    </div>
-                    <div id='super_local_back'>
-                        <h3><span style={{color: '#7061f6'}}>●</span>超企画エリアバックヤード</h3>
-                        <p>超企画エリアのバックヤードです。機材等が置いてあります。</p><p className='group'>（権限：実行委員,メディア,職員,スタッフ）</p>
+                        <p>ステージ出演者の控え室です。</p>
                     </div>
                 </div>
                 {/* 各箇所の名前、そこで行われること、入場規制の有無、観覧の可否 */}

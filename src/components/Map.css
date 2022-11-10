@@ -37,9 +37,3 @@
 #captions>div>div>h3>span {
     margin: auto .5vmin;
 }
-
-.group {
-    /* font-style: italic; */
-    color: #888;
-    font-size: small;
-}

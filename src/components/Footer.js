@@ -23,14 +23,14 @@ function Foot() {
                     <a href={f_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
                     <a href={f_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
                     <a href={f_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
-                    <a href='../contact.html' target='_blank' rel='noopener noreferrer'>お問い合わせ<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
+                    <a href='../contact.html'>お問い合わせ<FaExternalLinkAlt className='fa-ex foot-ex'/></a>
                 </div>
             </nav>
             {/* <div id='disclaimer'>
                 <p>このサイトは生徒が運営しています。掲載する情報には細心の注意を払っておりますが、より正確な情報は<a href='https://nnn.ed.jp/' target='_blank' rel='noopener noreferrer'>N/S高等学校公式サイト</a>をご覧ください。</p>
                 <p>このサイトを閲覧したことによって閲覧者に生じたいかなる損失についても、運営者は一切の責任を負いかねます。</p>
             </div> */}
-            <p id='copy'>&copy; Campus Festival 2022 in Hiroshima, Malk is All rights reserved.</p>
+            <p id='copy'>&copy; Campus Festival 2022 in Hiroshima<br className='mobile'></br><span className='comma'>,</span> Malk is All rights reserved.</p>
         </footer>
     );
 }

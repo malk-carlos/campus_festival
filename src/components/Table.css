@@ -21,7 +21,6 @@ table.timetable-table {
 .timetable-table>tbody>tr td {
     text-align: center;
     padding: 8px;
-    line-height: 1.428571429;
     vertical-align: top;
     border-top: 1px solid #dddddd;
 }
@@ -73,4 +72,28 @@ td {
 
 .junbikomi {
     font-size: small;
+}
+
+table .mobile {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .timetable-table>thead th {
+        font-size: small;
+    }
+    .timetable-table td {
+        font-size: small;
+    }
+    .time {
+        width: 2.75%;
+    }
+    
+    .subarea-ex,.junbikomi {
+        font-size: xx-small;
+    }
+    table .mobile {
+        display: unset;
+    }
+    
 }

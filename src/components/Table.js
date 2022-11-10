@@ -31,7 +31,7 @@ function Table() {
                 </tr>
                 <tr>
                     <td className='time'>15:20</td>
-                    <td className='stage data'>演劇 ~アポカリプス女子会~ （演劇部公演）<span className='end'>-16:10</span><span className='junbikomi'>*準備時間込</span></td>
+                    <td className='stage data'>演劇 ~アポカリプス女子会~ <br className='mobile'></br>（演劇部公演）<span className='end'>-16:10</span><span className='junbikomi'>*準備時間込</span></td>
                 </tr>
                 <tr>
                     <td className='time'>16:10</td>

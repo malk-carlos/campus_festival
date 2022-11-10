@@ -7,7 +7,7 @@ function Map() {
         <div className='sec-wrap'>
         <div id="Map" className='section'>
             <h1 className='sec-title'>場内マップ</h1>
-            <div id='imgwrap'>
+            <div className='imgwrap'>
                 <img src={Mapimg} />
             </div>
             <div id='captions'>

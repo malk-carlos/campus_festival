@@ -19,6 +19,8 @@
     margin-top: 1.5vmin;
 }
 
-#toblog {
-    opacity: .8;
+#toblog,
+#toblog>a,
+#toblog path {
+    color: #888;
 }

@@ -1,9 +1,9 @@
-#imgwrap {
+#Map .imgwrap {
     width: 80%;
     margin: auto;
 }
 
-#imgwrap img {
+#Map .imgwrap img {
     width: 100%;
 }
 
@@ -36,4 +36,16 @@
 
 #captions>div>div>h3>span {
     margin: auto .5vmin;
+}
+
+@media screen and (max-width:800px) {
+    #captions>div {
+        display: block;
+        width: 100%;
+        margin: auto 2.5% 20px;
+    }
+    #Map .imgwrap img {
+        width: 120%;
+        margin-left: -10%;
+    }
 }

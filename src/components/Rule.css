@@ -21,3 +21,29 @@
     margin: auto 3vmin 1vmin;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width:800px) {
+    #Rule {
+        padding: 0 5% 10vmin;
+        margin-bottom: 0;
+    }
+
+    #Rule>div {
+        margin: 2.5vmin auto 5vmin;
+    }
+
+    #Rule>div>h2 {
+        margin: 10px auto;
+        font-weight: bold;
+        /* フォント変えるなど目立たせる工夫 / 見た目がのっぺりしない工夫 */
+    }
+
+    #Rule>div>h3 {
+        margin: 10px;
+    }
+
+    #Rule>div>p {
+        margin: auto 3vmin 12.5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

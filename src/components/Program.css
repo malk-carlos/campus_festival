@@ -10,7 +10,7 @@
 
 .program {
     width: 25vmax;
-    height: 22.5vmax;
+    height: 25vmax;
     display: inline-block;
     background-color: #fdc16722;
     border-radius: 0 0 5vmin 0;
@@ -18,6 +18,7 @@
     text-align: center;
     white-space: initial;
     overflow: scroll;
+    cursor: zoom-in;
 }
 
 .program::-webkit-scrollbar{
@@ -25,11 +26,11 @@
 }  
 
 .program h3 {
-    margin: 2.5% 5%;
+    margin: 5% 5%;
     text-align: left;
 }
 
-.program img {
+.program>img {
     width: 80%;
     height: calc(80%*9/16);
     object-fit: cover;
@@ -41,8 +42,54 @@
     margin: 2.5% 5%;
 }
 
+.dialog {
+    display: none;
+}
+
+.attention {
+    font-size: small;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* .dialogmg>img {
+
+} */
+
 @media screen and (max-width: 800px) {
-    .pg_cp_wrap {
+    /* .pg_cp_wrap {
         display: none;
+    } */
+
+    .program {
+        width: 45vw;
+        height: 45vw;
+        display: inline-block;
+        background-color: #fdc16722;
+        border-radius: 0 0 5vmin 0;
+        /* margin: 10px 10px; */
+        text-align: center;
+        cursor: zoom-in;
+    }
+
+    .program::-webkit-scrollbar{
+        display: none;
+    }  
+
+    .program h3 {
+        margin: 5% 5%;
+        text-align: left;
+    }
+
+    .program>img {
+        width: 80%;
+        height: calc(80%*9/16);
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    .program p {
+        text-align: left;
+        margin: 2.5% 5%;
     }
 }

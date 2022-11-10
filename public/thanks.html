@@ -9,9 +9,40 @@
     <title>ご回答ありがとうございます</title>
 </head>
 <body id="thanks_html">
+    <script>
+        // タイマーのスクリプト
+
+        const totalTime = 10000;
+        const oldTime = Date.now();
+
+        const timeId = setInterval(() => {
+            const currentTime = Date.now();
+
+            // 差分を求める
+            const diff = currentTime - oldTime;
+
+            let diffSec = totalTime - diff;
+
+            //ミリ秒を整数に変換
+            const remainSec = Math.floor(diffSec / 1000);
+            diffSec = diffSec % 1000;
+
+            let time = `${remainSec}秒後に自動でトップページに戻ります。`;
+
+            // 画面に表示する
+            document.querySelector('#timer').innerHTML = time;
+
+            // 0秒以下になったら
+            if (remainSec < 0) {
+                document.querySelector('#timer').innerHTML = 'トップページに戻っています';
+                window.location = 'index.html';
+            }
+        })
+    </script>
     <h1>送信が完了しました！</h1>
     <p>お問い合わせありがとうございます。平均3営業日以内に回答させていただきます。</p>
+    <p id="timer"></p>
 
-    <a href="./index.html">トップページに戻る</a>
+    <a href="./index.html">今すぐトップページに戻る</a>
 </body>
 </html>

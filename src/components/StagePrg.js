@@ -8,6 +8,7 @@ import quiz from './asset/quiz.png';
 import dktk from './asset/defiktok.png';
 import act from './asset/act.png';
 import hako from './asset/hako.png';
+import nswed from './asset/nswed.png'
 
 function Stageprg() {
     return (
@@ -51,7 +52,7 @@ function Stageprg() {
                 </div>
                 <div className='program'>
                     <h3>NS曜日の広島キャンパス</h3>
-                    <img src={noimage} />
+                    <img src={nswed} />
                     <p>皆が気になる様々な「説」をヤラセなしで調査してみました。<br></br>水曜日ネタ他キャンパスと絶対被る「説」</p>
                 </div>
                 <div className='program'>

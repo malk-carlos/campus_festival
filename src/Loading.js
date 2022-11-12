@@ -16,7 +16,7 @@ window.onload = function() {
     setTimeout(() => {
       let spinner = document.getElementById('loading');
       spinner.classList.add('loaded');
-    }, 5000);
+    }, 3000);
   }
 }
 

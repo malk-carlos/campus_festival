@@ -1,15 +1,9 @@
-header {
-    height: 15vmin;
-    width: 100vw;
-    vertical-align: middle;
-    position: relative;
-    background-color: #ec7b7c; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
-    opacity: .8;
-    position: fixed;
-    top: 0;
+#normal-head {
+    opacity: 0.1;
+    z-index: 100;
 }
 
-header #logo {
+#normal-head #logo {
     display: inline-flex;
     width: 10%;
     object-fit: contain;
@@ -19,7 +13,7 @@ header #logo {
     left: 2.5%;
 }
 
-header nav  ul:nth-of-type(1){
+#normal-head nav  ul:nth-of-type(1){
     display: inline-flex;
     position: absolute;
     right: 5%;
@@ -27,7 +21,7 @@ header nav  ul:nth-of-type(1){
     transform: translateY(-50%);
 }
 
-header nav  ul:nth-of-type(2){
+#normal-head nav  ul:nth-of-type(2){
     display: inline-flex;
     position: absolute;
     right: 5%;
@@ -35,20 +29,20 @@ header nav  ul:nth-of-type(2){
     transform: translateY(-50%);
 }
 
-header li {
+#normal-head li {
     display: inline-block;
     margin-right: 1em;
     padding: 1vmin;
 }
 
-header li a {
+#normal-head li a {
     color: #ffffff;
     font-size: 2vmin;
     text-decoration: none;
     transition: .2s;
 }
 
-header li a:hover {
+#normal-head li a:hover {
     text-shadow: 0 0 .2em #fff8;
     transition: .2s;
 }
@@ -75,13 +69,59 @@ header li a:hover {
     color: #fff;
 }
 
+/* ヘッダ表示切り替え関連 */
+
+#normal-head.head-active {
+    height: 15vmin;
+    width: 100vw;
+    vertical-align: middle;
+    background-color: #ec7b7c; /* ヘッダカラーは仮。ロゴ色と相談して調整 */
+    opacity: .8;
+    position: fixed;
+    top: 0;
+    transition: 2s;
+}
+
+#topimg {
+    display: block;
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+}
+
+#topimg img {
+    width: 100%;
+}
+
+#topimg div {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+#topimg div p:nth-of-type(1) {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: #ec7b7c 0 0 10px, #f75c3d 0 0 3px;
+}
+
+#topimg div p:nth-of-type(2) {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 12px;
+}
+#topimg div p:nth-of-type(2) path {
+    color: #fff;
+    transform: translateY(10%);
+}
+
 @media screen and (max-width: 800px) {
-    header {
+    #normal-head {
         height: 15vw;
         position: relative;
     }
     
-    header #logo {
+    #normal-head #logo {
         width: 25%;
         left: 7.5%;
     }

@@ -8,6 +8,8 @@ import Rule from './components/Rule';
 import Access from './components/Access';
 import Footer from './components/Footer';
 import Loading from './Loading'
+import './components/animation.css'
+import { useInView } from 'react-intersection-observer';
 
 function App() {
     return(

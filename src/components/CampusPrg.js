@@ -6,9 +6,15 @@ import shoot from './asset/shoot.png';
 import scale from './asset/scale.png';
 import tenji from './asset/tenji.png';
 import wanage from './asset/wanage.png';
+import './animation.css';
+import { useInView } from 'react-intersection-observer';
 
 function Campusprg() {
-    let i = 0
+    let i = 0;
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
         // 各企画紹介記事追加ごとに記事遷移リンク追加　（下）
         // <p><a href='' target='_blank' rel='noopener noreferrer'>企画名 紹介記事を見る</a></p>

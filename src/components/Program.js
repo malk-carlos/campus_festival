@@ -4,6 +4,8 @@
 import './Program.css';
 import Stage from './StagePrg';
 import Campus from './CampusPrg';
+import './animation.css';
+import { useInView } from 'react-intersection-observer';
 
 
 function slprg() {
@@ -13,10 +15,13 @@ function slprg() {
 }
 
 function Program() {
-    
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
         <div className='sec-wrap'>
-        <div id="Program" className='section'>
+        <div id="Program" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
             <h1 className='sec-title'>企画一覧</h1>
             <p className='attention'>*以下の企画は全て予定です。連絡なく変更になる場合があります。</p>
             {/* 選択次第で表示を切り替えるようにしたい */}

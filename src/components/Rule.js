@@ -1,12 +1,18 @@
 // キャンパス注意事項
 import './Rule.css';
+import './animation.css';
+import { useInView } from 'react-intersection-observer';
 
 function Rule() {
     const com = ". ";
     let i = 0;
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
         <div className='sec-wrap'>
-        <div id="Rule" className='section'>
+        <div id="Rule" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
             <h1 className='sec-title'>注意事項</h1>
             <div id='parent'>
                 <h2>保護者様への注意事項</h2>

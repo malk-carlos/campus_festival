@@ -1,11 +1,17 @@
 // 場内マップ
 import './Map.css';
 import Mapimg from './asset/map.png'
+import './animation.css';
+import { useInView } from 'react-intersection-observer';
 
 function Map() {
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
         <div className='sec-wrap'>
-        <div id="Map" className='section'>
+        <div id="Map" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
             <h1 className='sec-title'>場内マップ</h1>
             <div className='imgwrap'>
                 <img src={Mapimg} />

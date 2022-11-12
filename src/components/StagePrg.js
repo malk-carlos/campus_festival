@@ -9,8 +9,14 @@ import dktk from './asset/defiktok.png';
 import act from './asset/act.png';
 import hako from './asset/hako.png';
 import nswed from './asset/nswed.png'
+import './animation.css';
+import { useInView } from 'react-intersection-observer';
 
 function Stageprg() {
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
         <div id='stage' className='pgGourp'>
             <h2>ステージ企画</h2>

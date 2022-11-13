@@ -1,21 +1,21 @@
 // スローガン ロゴと由来
-import './Slogan.css';
+import './Top.css';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import logo from './asset/logo.png';
 import './animation.css';
 import { useInView } from 'react-intersection-observer';
 
-function Slogan() {
+function Top() {
     const slogan = "Défi"
     const slogan_blog = "http://cf-blog.ns-hiroshima-campus.net/2022/11/01/cf2022%e5%a7%8b%e5%8b%95/"
 
     const { ref , inView } = useInView({
-        rootMargin: '10px',
+        rootMargin: '-10px',
         triggerOnce: true
     });
     return (
         <div className='sec-wrap'>
-            <div id="Slogan" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
+            <div id="Top" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
                 <div>
                     <h1 className='sec-title'>スローガン</h1>
                     <p>Campus Festival 2022 in Hiroshimaのスローガンは<strong>{slogan}</strong>に決定しました！！<span id='toblog'>（詳しくは<a href={slogan_blog} target='_blank' rel='noopener noreferrer'>こちら<FaExternalLinkAlt style={{margin:"0 .5vmin"}}/></a>で紹介しています。）</span></p>
@@ -26,4 +26,4 @@ function Slogan() {
         </div>
     );
 }
-export default Slogan;
+export default Top;

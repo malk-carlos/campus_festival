@@ -12,7 +12,7 @@ import { useInView } from 'react-intersection-observer';
 function Campusprg() {
     let i = 0;
     const { ref , inView } = useInView({
-        rootMargin: '10px',
+        rootMargin: '-10px',
         triggerOnce: true
     });
     return (

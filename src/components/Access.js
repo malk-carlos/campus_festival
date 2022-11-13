@@ -1,6 +1,7 @@
 // キャンパスの地図と住所 / 交通手段
 import './Access.css';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
 
 function Access() {
     const adress1 = '〒730-0051';
@@ -12,9 +13,14 @@ function Access() {
     // バス路線掲載ページurl （ナビタイム）
     const bus_src ='https://www.navitime.co.jp/bus/diagram/direction/00093111/';
 
+    const { ref , inView } = useInView({
+        rootMargin: '-10px',
+        triggerOnce: true
+    });
+
     return (
         <div className='sec-wrap'>
-        <div id="Access" className='section'>
+        <div id="Access" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
             <h1 className='sec-title'>会場アクセス</h1>
             <div id='area-map'>
                 <iframe src={map_src} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

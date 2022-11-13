@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import Slogan from './components/Slogan';
+import Top from './components/Top';
 import Program from './components/Program';
 import Timetable from './components/Timetable';
 import Map from './components/Map';
@@ -16,7 +16,7 @@ function App() {
         <div id="app">
             <Loading />
             <Header />
-            <Slogan />
+            <Top />
             <Program />
             <Timetable />
             <Map />

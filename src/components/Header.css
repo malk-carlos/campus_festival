@@ -1,5 +1,5 @@
 #normal-head {
-    opacity: 0.1;
+    opacity: 0;
     z-index: 100;
 }
 
@@ -85,18 +85,24 @@
 #topimg {
     display: block;
     position: relative;
-    width: 100vw;
+    text-align: right;
     z-index: 1;
+    width: 100vw;
 }
 
 #topimg img {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    
 }
 
 #topimg div {
     position: absolute;
     top: 70%;
     left: 10%;
+    text-align: left;
 }
 
 #topimg div p:nth-of-type(1) {
@@ -113,6 +119,7 @@
 #topimg div p:nth-of-type(2) path {
     color: #fff;
     transform: translateY(10%);
+    animation: scrollarrow 3.0s infinite ease-in-out;
 }
 
 @media screen and (max-width: 800px) {
@@ -124,6 +131,10 @@
     #normal-head #logo {
         width: 25%;
         left: 7.5%;
+    }
+
+    #topimg {
+        display: none;
     }
 
     #pc_nav {
@@ -167,5 +178,15 @@
 @media screen and (min-width: 801px) {
     #mo_nav {
         display: none;
+    }
+}
+
+@keyframes scrollarrow {
+    40% {
+        transform: translateY(10%);
+    } 50% {
+        transform: translateY(5%);
+    } 80% {
+        transform: translateY(100%);
     }
 }

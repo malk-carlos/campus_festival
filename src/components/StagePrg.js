@@ -14,7 +14,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Stageprg() {
     const { ref , inView } = useInView({
-        rootMargin: '10px',
+        rootMargin: '-10px',
         triggerOnce: true
     });
     return (

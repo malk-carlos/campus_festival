@@ -20,7 +20,7 @@ function Stageprg() {
     return (
         <div id='stage' className='pgGourp'>
             <h2>ステージ企画</h2>
-            <div className='pgWrap'>
+            <div ref={ref} className={inView ? "active pgWrap fadein" : "pgWrap fadein"}>
                 <div className='program'>
                     <h3>OP/ED</h3>
                     <img src={noimage} />

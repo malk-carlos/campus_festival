@@ -21,7 +21,7 @@ function Campusprg() {
         <div id='campus' className='pgGourp'>
             <h2>会場企画（常設）</h2>
             <h4 id="debag"></h4>
-            <div className='pgWrap'>
+            <div ref={ref} className={inView ? "active pgWrap fadein" : "pgWrap fadein"}>
                 <div className='program' id={'cpg'+i}>
                     <h3>みんなの一文物語</h3>
                     <img src={story}/>

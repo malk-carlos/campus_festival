@@ -62,8 +62,8 @@
     } */
 
     .program {
-        width: 45vw;
-        height: 45vw;
+        width: 75vw;
+        height: 75vw;
         display: inline-block;
         background-color: #fdc16722;
         border-radius: 0 0 5vmin 0;

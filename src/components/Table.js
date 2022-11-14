@@ -1,9 +1,15 @@
 // タイムスケジュール（表のみ）
 import './Table.css';
+import './animation.css'
+import { useInView } from 'react-intersection-observer';
 
 function Table() {
+    const { ref , inView } = useInView({
+        rootMargin: '10px',
+        triggerOnce: true
+    });
     return (
-        <table class="timetable-table">
+        <table ref={ref} className={inView ? "active fadein-bottom timetable-table" : "fadein-bottom timetable-table"}>
             <thead>
                 <th className='time'>開始時刻</th>
                 <th className='stage data'>ステージ企画</th>

@@ -65,7 +65,7 @@ h1 {
   .section {
     width: 90%; 
     margin: 0;
-    padding: 0 5%;
+    padding: 0 5% 10%;
   }
   .nonmobile {
     display: none;

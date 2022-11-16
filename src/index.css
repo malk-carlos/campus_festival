@@ -70,4 +70,12 @@ h1 {
   .nonmobile {
     display: none;
   }
+  .sec-title {
+    color: #555;
+    padding-left: 5%;
+    padding-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 100%;
+    border-bottom: solid 2px #f75c3d;
+  }
 }

@@ -15,7 +15,7 @@ function Head() {
     const h_blog = 'https://cf-blog.ns-hiroshima-campus.net'; //ブログURL
 
     const { ref , inView } = useInView({
-        rootMargin: '-10px',
+        rootMargin: '10px',
         triggerOnce: true
     });
     return (
@@ -49,10 +49,9 @@ function Head() {
                             <li className='navs'><Scroll to='Rule' smooth>注意事項</Scroll></li>
                         </ul>
                         <ul>
-                            {/* <li><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li> */}
+                            {/* <li className='navs'><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li> */}
                             <li className='preparing navs'>配信URL<FaExternalLinkAlt /></li>
-                            {/* <li><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex'/></a></li> */}
-                            <li className='preparing navs'>キャンフェス全体<FaExternalLinkAlt /></li>
+                            <li className='navs'><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex'/></a></li>
                             <li className='navs'><a href={h_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex'/></a></li>
                             <li className='navs'><a href='../contact.html'>お問い合わせ<FaExternalLinkAlt className='fa-ex'/></a></li>
                         </ul>

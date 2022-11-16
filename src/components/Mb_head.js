@@ -1,18 +1,14 @@
 import { Link as Scroll } from 'react-scroll';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
 
-export const MH = () => {
+function MH() {
     const h_broadcast = ''; //配信URL
     const h_cf_all = ''; //通学コース全体
     const h_blog = 'http://cf-blog.ns-hiroshima-campus.net'; //ブログURL
-    const { ref, inView } = useInView({
-        rootMargin: '-10px',
-        triggerOnce: true
-    });
     return (
         <div id='mo_nav' className='head_mo'>
-            <ul ref={ref} className={inView ? "active" : ""}>
+            <ul>
+                <li><Scroll to='Slogan' smooth className='navs'>スローガン</Scroll></li>
                 <li><Scroll to='Program' smooth className='navs'>企画一覧</Scroll></li>
                 <li><Scroll to='Timetable' smooth className='navs'>タイムテーブル</Scroll></li>
                 <li><Scroll to='Map' smooth className='navs'>場内マップ</Scroll></li>

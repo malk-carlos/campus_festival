@@ -2,6 +2,12 @@
     padding-top: 10vh;
 }
 
+@media screen and (max-width:800px) {
+    #Top {
+        padding-top: calc(10vh + 100px);
+    }
+}
+
 #Top>div {
     display: inline-block;
 }

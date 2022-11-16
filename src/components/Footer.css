@@ -93,25 +93,3 @@ footer .comma {
         display: none;
     }
 }
-
-
-/* 消す方向で
-footer ul {
-    padding: 0;
-}
-
-footer li {
-    display: inline-block;
-    padding: .5% 1em;
-    border-left: solid 1px #fff;
-}
-
-footer li:last-child {
-    border-right: solid 1px #fff;
-}
-
-footer li a {
-    color: #fff;
-    text-decoration: none;
-    transition: .2s;
-} */

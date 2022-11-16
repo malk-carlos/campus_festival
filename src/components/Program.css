@@ -57,10 +57,6 @@
 } */
 
 @media screen and (max-width: 800px) {
-    /* .pg_cp_wrap {
-        display: none;
-    } */
-
     .program {
         width: 75vw;
         height: 75vw;

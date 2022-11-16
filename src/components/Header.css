@@ -13,7 +13,7 @@
     left: 2.5%;
 }
 
-#normal-head nav  ul:nth-of-type(1){
+#normal-head nav ul:nth-of-type(1){
     display: inline-flex;
     position: absolute;
     right: 5%;
@@ -21,7 +21,7 @@
     transform: translateY(-50%);
 }
 
-#normal-head nav  ul:nth-of-type(2){
+#normal-head nav ul:nth-of-type(2){
     display: inline-flex;
     position: absolute;
     right: 5%;
@@ -31,7 +31,7 @@
 
 #normal-head li {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 0.5em;
     padding: 1vmin;
 }
 
@@ -90,15 +90,14 @@
     width: 100vw;
 }
 
-#topimg img {
+#pc_topimg img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     margin: 0;
-    
 }
 
-#topimg div {
+#pc_topimg div {
     position: absolute;
     top: 70%;
     left: 10%;
@@ -123,8 +122,11 @@
 }
 
 @media screen and (max-width: 800px) {
-    #normal-head {
-        height: 15vw;
+    header {
+        position: fixed;
+    }
+
+    #normal-head.head-active {
         position: relative;
     }
     
@@ -137,46 +139,33 @@
         display: none;
     }
 
-    #pc_nav {
+    .head_pc {
         display: none;
     }
 
-    .navs {
-        color: #fff;
-        font-size: large;
-        display: block;
-        /* border-bottom: solid 30% #f75c3d; */
-        background-image: linear-gradient(transparent 30%, #f75c3d 80%)
-    }
-
-    .bm-burger-button {
-        position: absolute;
-        width: 35px;
-        height: 30px;
+    #normal-head li {
+        padding-left: 0;
+        height: 50px;
         margin: 0;
-        top: 50%;
-        right: 10%;
-        transform: translateY(-50%);
+        background-color: #f75c3d;
     }
 
-    #react-burger-menu-btn {
-        width: 100%;
-        height: 100%;
+    #normal-head li a {
+        color: #fff;
+        width: 80vw;
+        font-size: 24px;
+        padding-left: 5%;
+        border-bottom: solid 3px #fff;
     }
-    .bm-burger-bars {
-        opacity: 1;
-        width: 100%;
-        height: 10%;
-        background-color: #fff;
-    }
-    .bm-overlay {
-        opacity: 1;
-        background-color: #ec7b7cdd !important;
+
+    #normal-head nav ul:nth-of-type(1),#normal-head nav ul:nth-of-type(2) {
+        left: 0;
+        right: auto;
     }
 }
 
 @media screen and (min-width: 801px) {
-    #mo_nav {
+    .head_mo {
         display: none;
     }
 }
@@ -189,4 +178,9 @@
     } 80% {
         transform: translateY(100%);
     }
+}
+
+.preparing,.preparing path { /* 準備中のURLをグレーに表示 */
+    color: #888;
+    opacity: .8;
 }

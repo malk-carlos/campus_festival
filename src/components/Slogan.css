@@ -1,0 +1,26 @@
+#Slogan {
+    padding-top: 10vh;
+}
+
+#Slogan>div {
+    display: inline-block;
+}
+
+#Slogan img {
+    width: 45%;
+}
+
+#Slogan strong {
+    font-size: large;
+    text-decoration: underline;
+}
+
+#Slogan p {
+    margin-top: 1.5vmin;
+}
+
+#toblog,
+#toblog>a,
+#toblog path {
+    color: #888;
+}

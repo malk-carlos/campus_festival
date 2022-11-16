@@ -5,8 +5,8 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 function Foot() {
     const f_broadcast = ''; //配信URL
-    const f_cf_all = ''; //通学コース全体
-    const f_blog = 'http://cf-blog.ns-hiroshima-campus.net'; //ブログURL
+    const f_cf_all = 'https://sites.google.com/nnn.ed.jp/campusfestival2022/'; //通学コース全体
+    const f_blog = 'https://cf-blog.ns-hiroshima-campus.net'; //ブログURL
 
     return (
         <footer>

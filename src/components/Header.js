@@ -1,8 +1,9 @@
 // ヘッダー 各セクションへのリンク 通学全体ページへのリンク
 import './Header.css';
-import Menu from './HBMenu'
+import MH from './Mb_head';
 import logo from './asset/logo.png';
-import header from './asset/header.png';
+import pc_header from './asset/header.png';
+import mo_header from './asset/MBhead.png';
 import { Link as Scroll } from 'react-scroll';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { FaArrowDown } from 'react-icons/fa';
@@ -10,8 +11,8 @@ import { useInView } from 'react-intersection-observer';
 
 function Head() {
     const h_broadcast = ''; //配信URL
-    const h_cf_all = ''; //通学コース全体
-    const h_blog = 'http://cf-blog.ns-hiroshima-campus.net'; //ブログURL
+    const h_cf_all = 'https://sites.google.com/nnn.ed.jp/campusfestival2022/'; //通学コース全体
+    const h_blog = 'https://cf-blog.ns-hiroshima-campus.net'; //ブログURL
 
     const { ref , inView } = useInView({
         rootMargin: '-10px',
@@ -20,39 +21,43 @@ function Head() {
     return (
         <header>
             <div id='topimg'>
-                <img src={header}/>
-                <div>
-                    <p>Campus Festival 2022 in Hiroshima</p>
-                    <p>スクロールしてください<FaArrowDown /></p>
+                <div id='pc_topimg' className='head_pc'>
+                    <img src={pc_header}/>
+                    <div>
+                        <p>Campus Festival 2022 in Hiroshima</p>
+                        <p>スクロールしてください<FaArrowDown /></p>
+                    </div>
+                </div>
+                <div id='mo_topimg' className='head_mo'>
+                    <img src={mo_header}/>
+                    <div>
+                        <p>Campus Festival 2022 in Hiroshima</p>
+                        <p>スクロールしてください<FaArrowDown /></p>
+                    </div>
                 </div>
             </div>
             <div id='normal-head' ref={ref} className={inView ? "head-active" : ""}>
                 <img id='logo' src={logo}/>
                 <nav>
-                    <div id='pc_nav'>
+                    <div id='pc_nav' className='head_pc'>
                         <ul>
-                            {/* <li><a href='#Program'>企画一覧</a></li>
-                            <li><a href='#Timetable'>タイムテーブル</a></li>
-                            <li><a href='#Map'>場内マップ</a></li>
-                            <li><a href='#Access'>会場アクセス</a></li>
-                            <li><a href='#Rule'>注意事項</a></li> */}
-                            
-                            <Scroll to='Program' smooth className='navs's>企画一覧</Scroll>
-                            <Scroll to='Timetable' smooth className='navs'>タイムテーブル</Scroll>
-                            <Scroll to='Map' smooth className='navs'>場内マップ</Scroll>
-                            <Scroll to='Access' smooth className='navs'>会場アクセス</Scroll>
-                            <Scroll to='Rule' smooth className='navs'>注意事項</Scroll>
+                            <li className='navs'><Scroll to='Slogan' smooth>スローガン</Scroll></li>
+                            <li className='navs'><Scroll to='Program' smooth>企画一覧</Scroll></li>
+                            <li className='navs'><Scroll to='Timetable' smooth>タイムテーブル</Scroll></li>
+                            <li className='navs'><Scroll to='Map' smooth>場内マップ</Scroll></li>
+                            <li className='navs'><Scroll to='Access' smooth>会場アクセス</Scroll></li>
+                            <li className='navs'><Scroll to='Rule' smooth>注意事項</Scroll></li>
                         </ul>
                         <ul>
-                            <li><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li>
-                            <li><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex'/></a></li>
-                            <li><a href={h_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex'/></a></li>
-                            <li><a href='../contact.html'>お問い合わせ<FaExternalLinkAlt className='fa-ex'/></a></li>
+                            {/* <li><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li> */}
+                            <li className='preparing navs'>配信URL<FaExternalLinkAlt /></li>
+                            {/* <li><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex'/></a></li> */}
+                            <li className='preparing navs'>キャンフェス全体<FaExternalLinkAlt /></li>
+                            <li className='navs'><a href={h_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex'/></a></li>
+                            <li className='navs'><a href='../contact.html'>お問い合わせ<FaExternalLinkAlt className='fa-ex'/></a></li>
                         </ul>
                     </div>
-                    <div id='mo_nav'>
-                        <Menu/>
-                    </div>
+                    <MH/>
                 </nav>
             </div>
         </header>

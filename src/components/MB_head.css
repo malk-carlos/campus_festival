@@ -14,12 +14,11 @@
 #mo-head li {
     display: inline-block;
     position: relative;
-    padding: 0;
+    padding: 1.25% 0;
     margin: 0;
     height: 50px;
     background-color: #f75c3d;
     text-align: center;
-    padding-top: 2.5%;
     border-right: solid 1px #fff;
 }
 
@@ -37,7 +36,7 @@
 
 .mo-navs>a,.mo-navs-big>a,.mo-navs-mid>a {
     color: #fff;
-    font-size: 6px;
+    font-size: 1vw;
     white-space: nowrap;
 }
 

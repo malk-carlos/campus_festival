@@ -1,0 +1,89 @@
+#mo-head {
+    position: fixed;
+    z-index: 99;
+}
+
+#mo-head ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border-bottom: solid 1px #fff;
+    border-left: solid 1px #fff;
+}
+
+#mo-head li {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #f75c3d;
+    text-align: center;
+    padding-top: 2.5%;
+    border-right: solid 1px #fff;
+}
+
+.mo-navs {
+    width: calc(100vw / 6 - 1px - (1px / 6));
+}
+
+.mo-navs-mid {
+    width: calc(20vw - 1.5px);
+}
+
+.mo-navs-big {
+    width: calc(30vw - 1px);
+}
+
+.mo-navs>a,.mo-navs-big>a,.mo-navs-mid>a {
+    color: #fff;
+    font-size: 6px;
+    white-space: nowrap;
+}
+
+.mo-navs img,.mo-navs-big img,.mo-navs-mid img {
+    color: #fff;
+    height: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 画像要素 */
+
+#mo_topimg {
+    display: block;
+    position: relative;
+    text-align: right;
+    z-index: 100;
+    width: 100vw;
+}
+
+#mo_topimg img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#mo_topimg div {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    text-align: left;
+}
+
+#mo_topimg div p:nth-of-type(1) {
+    color: #fff;
+    font-size: 16px;
+    text-shadow: #ec7b7c 0 0 10px, #f75c3d 0 0 3px;
+}
+
+#mo_topimg div p:nth-of-type(2) {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 12px;
+}
+#mo_topimg div p:nth-of-type(2) path {
+    color: #fff;
+    transform: translateY(10%);
+    animation: scrollarrow 3.0s infinite ease-in-out;
+}

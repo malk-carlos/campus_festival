@@ -11,10 +11,8 @@ function Top() {
     return (
         <div className='sec-wrap'>
             <div id="Top" ref={ref} className={inView ? "active section fadein" : "section fadein"}>
-                <div>
-                    <h1 className='sec-title'>最新のお知らせ</h1>
-                    <p>11/14 <a href='#Rule'>注意事項</a>を更新しました。</p>
-                </div>
+                <h1 className='sec-title'>重要なお知らせ</h1>
+                <p>11/14 <a href='#Rule'>注意事項</a>を更新しました。</p>
             </div>
         </div>
     );

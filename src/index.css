@@ -59,6 +59,7 @@ h1 {
   padding-top: 2.5%;
   margin-bottom: 2.5%;
   border-bottom: solid 2px #f75c3d;
+  text-align: left;
 }
 
 @media screen and (max-width: 800px) { /* 中サイズ */
@@ -75,7 +76,8 @@ h1 {
     padding-left: 5%;
     padding-top: 2.5%;
     margin-bottom: 2.5%;
-    width: 100%;
     border-bottom: solid 2px #f75c3d;
+    text-align: left;
+    width: calc(100% - 5%);
   }
 }

@@ -1,0 +1,77 @@
+#Map .imgwrap {
+    width: 80%;
+    margin: auto;
+}
+
+#Map .imgwrap img {
+    width: 100%;
+}
+
+#captions {
+    margin-top: 5vmin;
+}
+
+#captions>div {
+    display: inline-block;
+    width: 45%;
+    margin: auto 2.5%;
+    vertical-align: top;
+}
+
+#captions>div>div {
+    margin-bottom: 1.5vmin;
+}
+
+/* #captions>div {
+    margin-left: 5%;
+    width: 40%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+#captions>div::-webkit-scrollbar{
+    display: none;
+}   */
+
+#captions>div>div>h3>span {
+    margin: auto .5vmin;
+}
+
+#free_area,#restrictive_area {
+    margin: 0 !important;
+}
+
+.accordion__button {
+    margin: 0 !important;
+    width: calc(100% - 18px) !important;
+    padding: 18px 0 18px 18px !important;
+}
+
+.accordion__button::before {
+    display: inline-flex;
+    transition: .2s;
+}
+
+#Map .accordion__button h2 {
+    display: inline-flex;
+}
+
+.accordion__panel {
+    border: solid 1px #f4f4f4;
+    border-top: none;
+    box-shadow: 0 0 5px #f4f4f4;
+    margin-bottom: 2.5%;
+}
+
+@media screen and (max-width:800px) {
+    #captions>div {
+        display: block;
+        width: 100%;
+        margin: auto 2.5% 20px;
+    }
+    #Map .imgwrap img {
+        width: 120%;
+        margin-left: -10%;
+    }
+}

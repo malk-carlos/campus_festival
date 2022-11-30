@@ -36,7 +36,7 @@
 
 .mo-navs>a,.mo-navs-big>a,.mo-navs-mid>a {
     color: #fff;
-    font-size: 1vw;
+    font-size: .5rem;
     white-space: nowrap;
 }
 

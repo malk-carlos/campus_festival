@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Top() {
     const slogan = "Défi"
-    const slogan_blog = "https://cf-blog.ns-hiroshima-campus.net/2022/11/01/cf2022%e5%a7%8b%e5%8b%95/"
+    const slogan_blog = "https://cf-blog.ns-hiroshima-campus.net/?p=1"
 
     const { ref , inView } = useInView({
         rootMargin: '-10px',

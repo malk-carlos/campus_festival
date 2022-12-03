@@ -21,7 +21,7 @@ import contact from './asset/headIcons/contact.svg';
 // 以上各アイコン
 
 function MH() {
-    const h_broadcast = ''; //配信URL
+    const h_broadcast = 'https://youtu.be/fq6sBL__wuU'; //配信URL
     const h_cf_all = 'https://sites.google.com/nnn.ed.jp/campusfestival2022/'; //通学コース全体
     const h_blog = 'http://cf-blog.ns-hiroshima-campus.net'; //ブログURL
     return (

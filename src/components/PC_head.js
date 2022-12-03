@@ -8,7 +8,7 @@ import { FaArrowDown } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 function PH() {
-    const h_broadcast = ''; //配信URL
+    const h_broadcast = 'https://youtu.be/fq6sBL__wuU'; //配信URL
     const h_cf_all = 'https://sites.google.com/nnn.ed.jp/campusfestival2022/'; //通学コース全体
     const h_blog = 'https://cf-blog.ns-hiroshima-campus.net'; //ブログURL
 
@@ -41,8 +41,7 @@ function PH() {
                         </ul>
                         <ul>
                             <li className='pc-navs'><a href={h_cf_all} target='_blank' rel='noopener noreferrer'>キャンフェス全体<FaExternalLinkAlt className='fa-ex'/></a></li>
-                            {/* <li className='pc-navs'><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li> */}
-                            <li className='preparing pc-navs'>配信URL<FaExternalLinkAlt /></li>
+                            <li className='pc-navs'><a href={h_broadcast} target='_blank' rel='noopener noreferrer'>配信URL<FaExternalLinkAlt className='fa-ex'/></a></li>
                             <li className='pc-navs'><a href={h_blog} target='_blank' rel='noopener noreferrer'>ブログ<FaExternalLinkAlt className='fa-ex'/></a></li>
                             <li className='pc-navs'><a href='../contact.html'>お問い合わせ<FaExternalLinkAlt className='fa-ex'/></a></li>
                         </ul>

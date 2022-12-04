@@ -71,6 +71,7 @@ function PC_map() {
                     <div id='super_suwareru'>
                         <h3><span style={{color: '#80ebed'}}>●</span>超スワれる</h3>
                         <p>座席予約システム「スワれる」協賛の座席です。抽選で指定席がもらえるキャンペーン実施予定です。</p>
+                        <p><a href='https://ss.nagito.work/'>キャンペーンページ</a></p>
                     </div>
                 </div>
                 {/* 各箇所の名前、そこで行われること、入場規制の有無、観覧の可否 */}

@@ -95,6 +95,7 @@ function MB_map() {
                         <div id='super_suwareru'>
                             <h3><span style={{color: '#80ebed'}}>●</span>超スワれる</h3>
                             <p>座席予約システム「スワれる」協賛の座席です。抽選で指定席がもらえるキャンペーン実施予定です。</p>
+                            <p><a href='https://ss.nagito.work/'>キャンペーンページ</a></p>
                         </div>
                     </AccordionItemPanel>
                 </div>
